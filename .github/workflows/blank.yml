@@ -27,8 +27,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
+        working-directory: .
         run: echo Hello, world!
       - name: Run a pwd
+        working-directory: .
         run: pwd
       - name: Run a pwd
         run: mkdir test_gha
